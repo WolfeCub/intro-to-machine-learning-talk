@@ -1,0 +1,7 @@
+*.tex
+*.pdf
+*.vrb
+*.aux
+*.log
+*.out
+_minted*

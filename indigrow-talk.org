@@ -1,0 +1,50 @@
+#+TITLE: Intro to Machine Learning
+#+AUTHOR: Josh Wolfe
+#+OPTIONS: toc:nil
+
+* What problems can machine learning solve?
+  - Computer vision
+  - Audio and text analysis
+  - Traffic predictions
+  - Social media and product recommendations
+  - Spam filtering
+
+* Types of machine learning
+** Supervised
+   - More commonly used
+   - Training data is labeled ahead of time
+
+** Unsupervised
+   - No labeling is provided
+   - Tries to find commonalities in the data
+   - Usually used for identifying patterns in transaction data
+
+* Graph data structure
+  [[./graph.png]]
+
+  - Directed
+  - Acyclic
+  - Simple
+  - Weighted
+
+* Simple example - The =XOR= operation
+
+  | A | B | Output |
+  |---+---+--------|
+  | 0 | 0 |      0 |
+  | 0 | 1 |      1 |
+  | 1 | 0 |      1 |
+  | 1 | 1 |      0 |
+
+  - Has well defined inputs and outputs
+  - Very simple
+
+* =XOR= as a graph
+  [[./ex1.png]]
+
+* Graph weightings
+  [[./ex2.png]]
+  Randomly chosen between 0 and 1 based on a gaussian distribution
+
+* Activation functions
+  - The step function
