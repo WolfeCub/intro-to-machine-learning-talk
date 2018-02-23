@@ -20,7 +20,7 @@
    - Usually used for identifying patterns in transaction data
 
 * Graph data structure
-  [[./graph.png]]
+  [[file:images/graph.png]]
 
   - Directed
   - Acyclic
@@ -40,11 +40,51 @@
   - Very simple
 
 * =XOR= as a graph
-  [[./ex1.png]]
+  [[file:images/ex1.png]]
 
 * Graph weightings
-  [[./ex2.png]]
+  [[file:images/ex2.png]]
   Randomly chosen between 0 and 1 based on a gaussian distribution
 
 * Activation functions
   - The step function
+    [[file:images/step.png]]
+
+* Activation functions cont.
+  - Linear function
+    [[file:images/linear.png]]
+    
+* Human neurual biology
+  - Machine learning is inspired by the structure of our brains
+  - Each node in our graph represents a neuron
+  - Our activation functions represent a neuron firing
+  - Neurons don't fire in a linear manner
+    [[file:images/brain.jpg]]
+
+* Activation functions cont.
+  - Sigmoid function
+    [[file:images/sigmoid.jpg]]
+
+* Back to =XOR=
+  [[file:images/ex2.png]]
+
+* Back to =XOR= cont.
+  [[file:images/ex3.png]]
+  - Sum our input values multiplied by their weights
+
+* Back to =XOR= cont.
+  [[file:images/ex4.png]]
+  - Apply our activation function
+
+* Back to =XOR= cont.
+  [[file:images/ex5.png]]
+  - Repeat for the next layer
+
+* Teaching the machine aka Back propagation
+  - 0.77 is a fair bit off from 0
+  - We need to adjust the weightings in our graph
+  - We'll work our way backwards
+    [[file:images/ex6.png]]
+
+* Teaching the machine aka Back propagation cont.
+  - 
