@@ -17,7 +17,7 @@
 ** Unsupervised
    - No labeling is provided
    - Tries to find commonalities in the data
-   - Usually used for identifying patterns in transaction data
+   - Often used for identifying patterns in transaction data
 
 * Graph data structure
   [[file:images/graph.png]]
@@ -58,7 +58,7 @@
   - Machine learning is inspired by the structure of our brains
   - Each node in our graph represents a neuron
   - Our activation functions represent a neuron firing
-  - Neurons don't fire in a linear manner
+  - Neurons don't fire in a step-wise or linear manner
     [[file:images/brain.jpg]]
 
 * Activation functions cont.
@@ -87,4 +87,47 @@
     [[file:images/ex6.png]]
 
 * Teaching the machine aka Back propagation cont.
-  - 
+  1) We calculate our "Loss function" i.e. exactly how wrong we were
+     using something like the sum of square errors of all the layers.
+  2) We use a bit of calculus to minimize our error function.
+  3) We adjust our weights in the direction that helps minimize error.
+     
+  | Old | Adjusted |
+  |-----+----------|
+  | 0.8 |    0.712 |
+  | 0.4 |   0.3548 |
+  | 0.3 |   0.2681 |
+  | 0.2 |    0.112 |
+  | 0.9 |   0.8548 |
+  | 0.5 |   0.4681 |
+  | 0.3 |   0.1162 |
+  | 0.5 |    0.329 |
+  | 0.9 |    0.708 |
+
+* Testing with adjusted weights
+     [[file:images/ex7.png]]
+     - We've improved our guess!
+     - We're still pretty far off from our correct output
+
+* Training
+  - In this simple example we only have four possible inputs
+    so it shouldn't take too long before our network starts
+    making good guesses.
+  - For more complicated problems you might run thousands of
+    different inputs.
+
+* Resources
+  - Tensorflow 
+    - Made by the Google Brain research team
+    - One of the most popular ML libraries
+    - Python library
+    - [[http://github.com/tensorflow/tensorflow][tensorflow/tensorflow]] on GitHub
+  - Caffe2
+    - Made by the Facebook research team
+    - Python & C++ libraries available
+    - [[http://github.com/caffe2/caffe2][caffe2/caffe2]] on GitHub
+  - Keras
+    - Open source project
+    - Wrapper for Tensorflow
+    - Designed to be as simple to use as possible
+      to allow for rapid prototypes and experimentation
